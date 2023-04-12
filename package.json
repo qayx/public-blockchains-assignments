@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/elianderlohr/mtp-blockchain-assignments#readme",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.8.1",
+    "@openzeppelin/contracts": "^4.8.2",
     "dotenv": "^16.0.3"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
-    "hardhat": "^2.13.0"
+    "hardhat": "^2.13.1"
   }
 }
