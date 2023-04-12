@@ -7,29 +7,28 @@
 const hre = require("hardhat");
 
 async function main() {
+  // Get signers added in hardhat.config.js
+  const [signer1, signer2] = await hre.ethers.getSigners();
 
-    // Get signers added in hardhat.config.js
-    const [signer1, signer2] = await hre.ethers.getSigners();
+  // Pick the deployer (default is signer1).
+  const signer = signer1;
 
-    // Pick the deployer (default is signer1).
-    const signer = signer1;
+  const Ass = await hre.ethers.getContractFactory("Assignment1", {
+    signer: signer,
+  });
 
-    const Ass = await hre.ethers.getContractFactory("Assignment1", {
-        signer: signer,
-    });
+  const ass = await Ass.deploy();
 
-    const ass = await Ass.deploy();
+  console.log("Deploying assignment from address: " + signer.address);
 
-    console.log("Deploying assignment from address: " + signer.address);
+  await ass.deployed();
 
-    await ass.deployed();
-
-    console.log(`Assignment deployed to ${ass.address}`);
+  console.log(`Assignment deployed to ${ass.address}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 main().catch((error) => {
-    console.error(error);
-    process.exitCode = 1;
+  console.error(error);
+  process.exitCode = 1;
 });
