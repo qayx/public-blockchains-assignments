@@ -15,7 +15,10 @@ typechain-types
 #contracts/assignment_1/Assignment1.sol
 #scripts/assignment_1/interact.js
 
-assignment_2
+contracts/assignment_2/Assignment2.sol
+scripts/assignment_2/interact2.js
+scripts/assignment_2/interact.js
+
 assignment_3
 assignment_4
 
