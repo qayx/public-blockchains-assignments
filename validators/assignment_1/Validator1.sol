@@ -5,9 +5,9 @@ pragma solidity ^0.8.17;
 import "./interface/IAssignment1.sol";
 
 // Import the base assignment validator contract
-import "../../contracts/BaseValidator.sol";
+import "../BaseValidator.sol";
 
-import "../../node_modules/@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol";
+import "@openzeppelin/contracts/token/ERC721/utils/ERC721Holder.sol";
 
 // Import Task A, B, C
 import "./Validator1TaskA.sol";
