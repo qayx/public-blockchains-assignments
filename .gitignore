@@ -20,8 +20,11 @@ scripts/assignment_2/interact2.js
 scripts/assignment_2/interact.js
 
 assignment_3
-assignment_4
-assignment_4/helper
+# assignment_4
+validators/assignment_4
+.addresses.json
+Assignment4Exchange.sol*
+
 
 # Hardhat files
 cache
