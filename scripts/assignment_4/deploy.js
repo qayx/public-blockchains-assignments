@@ -66,7 +66,7 @@ async function main() {
 
     // Save the addresses so that we can re-use them in the interact.js script.
     // Order matters.
-    _saveAddresses([ ammAddress, tokenAddress, validatorAddress ]);
+    _saveAddresses([ ammAddress, tokenAddress, registryAddress ]);
                 
 }
 
