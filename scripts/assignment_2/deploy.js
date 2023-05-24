@@ -14,18 +14,11 @@ async function main() {
     // Pick the deployer (default is signer1).
     const signer = signer1;
     
-    console.log('Deploying validator...');
-
-    const Val = await hre.ethers.getContractFactory("EmptyValidator", {
+    const Ass = await hre.ethers.getContractFactory("Assignment2", {
         signer: signer,
     });
 
-    const val = await Val.deploy();
-
-    console.log('Local Validator address: ' + val.address);
-
-
-    const ass = await Ass.deploy(val.address);
+    const ass = await Ass.deploy();
 
     console.log("Deploying assignment from address: " + signer.address);
 
